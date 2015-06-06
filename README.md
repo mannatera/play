@@ -1,9 +1,10 @@
-# play
+## Live demo
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+Go to http://mannatera.github.io/play/dist/ 
 
 ## Build & development
+
+Clone it, build it and develop :) You must have [npm](https://www.npmjs.com/) installed before running grunt commands.
 
 Run `grunt` for building and `grunt serve` for preview.
 
