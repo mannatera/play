@@ -37,7 +37,11 @@ angular
               $scope.$watch(function() {}, function() {
                   // Wait for templates to render
                   $scope.$evalAsync(function() {
-                      element.mediaelementplayer();
+                      element.mediaelementplayer({
+                        enablePluginDebug: true,
+                        // path to Flash and Silverlight plugins
+                        pluginPath: '/mediaelement/', 
+                      });
                   });
               });
           },

@@ -349,8 +349,16 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           cwd: 'bower_components/mediaelement/build',
-          src: 'flashmediaelement.swf',
-          dest: '<%= yeoman.dist %>'
+          src: '*',
+          dest: '<%= yeoman.dist %>/mediaelement'
+        }]
+      },
+      dev: {
+        files: [{
+          expand: true,
+          cwd: 'bower_components/mediaelement/build',
+          src: '*',
+          dest: '<%= yeoman.app %>/mediaelement'
         }]
       },
       styles: {
@@ -397,6 +405,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
+      'copy:dev',
       'watch'
     ]);
   });
