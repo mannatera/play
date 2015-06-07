@@ -8,10 +8,8 @@
  * Controller of the playApp
  */
 angular.module('playApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', ['$scope', '$http', 'Playapi', function ($scope, $http, Playapi) {
+    Playapi.getChannelFormats(1375).then(function(formats) {
+      $scope.formats = formats;
+    });
+  }]);

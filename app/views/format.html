@@ -1,0 +1,5 @@
+<h1>{{title}}</h1>
+
+<video controls preload="auto" width="800" height="450" poster="{{format.image}}" mediaelement ng-init="$last ? loadMediaElement() : false">
+	<source src="{{src(stream.medium)}}" type="video/rtmp">
+</video>

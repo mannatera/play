@@ -23,9 +23,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/format/:id', {
+        templateUrl: 'views/format.html',
+        controller: 'FormatCtrl'
       })
       .otherwise({
         redirectTo: '/'
