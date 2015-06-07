@@ -38,9 +38,9 @@ angular
                   // Wait for templates to render
                   $scope.$evalAsync(function() {
                       element.mediaelementplayer({
-                        enablePluginDebug: true,
+                        enablePluginDebug: false,
                         // path to Flash and Silverlight plugins
-                        pluginPath: '/mediaelement/', 
+                        pluginPath: '/play/dist/mediaelement/', 
                       });
                   });
               });
