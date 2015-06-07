@@ -33,7 +33,7 @@ angular
   })
   .directive('mediaelement', function() {
       return {
-          link: function($scope, element, attrs) {
+          link: function($scope, element) {
               $scope.$watch(function() {}, function() {
                   // Wait for templates to render
                   $scope.$evalAsync(function() {
