@@ -9,11 +9,7 @@
  */
 angular.module('playApp')
   .controller('FormatCtrl', ['$scope', '$http', '$sce', '$routeParams', 'Playapi', function ($scope, $http, $sce, $routeParams, Playapi) {
-    
-    $scope.loadMediaElement = function(src) {
-      //$('video,audio').mediaelementplayer();
-    };
-    
+        
     $scope.src = function(src) {
       return $sce.trustAsResourceUrl(src);
     };

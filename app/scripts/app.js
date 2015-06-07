@@ -30,4 +30,16 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .directive('mediaelement', function() {
+      return {
+          link: function($scope, element, attrs) {
+              $scope.$watch(function() {}, function() {
+                  // Wait for templates to render
+                  $scope.$evalAsync(function() {
+                      element.mediaelementplayer();
+                  });
+              });
+          },
+      };
   });
